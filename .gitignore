@@ -24,6 +24,10 @@
 CLAUDE.md
 .omx/
 
+# Local development instructions and working records
+AGENTS.md
+docs/
+
 # Browser/runtime output
 profile/
 chrome-profile/

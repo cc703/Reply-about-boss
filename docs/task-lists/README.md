@@ -74,3 +74,5 @@ Example:
    - Do not infer a license, configure a remote, commit, or push without the stated authorization.
 17. `2026-08-17-v1.0-post-publish-verification.md`
    - Verify the public repository tree, commit, license, and privacy boundaries after the authorized initial push.
+18. `2026-08-17-v1.1-product-iteration.md`
+   - Improve one reproducible reply-draft or live-page issue while preserving manual review, no-send behavior, and credential privacy.

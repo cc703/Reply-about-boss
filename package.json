@@ -1,0 +1,11 @@
+{
+  "name": "boss-chat-listener",
+  "version": "0.12.0",
+  "private": true,
+  "description": "Local browser extension that detects BOSS web chat records and requests local reply draft suggestions.",
+  "scripts": {
+    "test": "node --test extension/tests/*.test.js",
+    "check": "node --check extension/src/conversationExtractor.js && node --check extension/src/messageExtractor.js && node --check extension/src/panel.js && node --check extension/src/replyDraftClient.js && node --check extension/src/settingsClient.js && node --check extension/src/content.js && node --check extension/popup.js"
+  },
+  "license": "MIT"
+}

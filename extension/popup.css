@@ -1,0 +1,98 @@
+:root {
+  color: #1f2933;
+  font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f7f9fb;
+}
+
+.bcl-popup {
+  padding: 18px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.bcl-popup-status {
+  min-height: 20px;
+  margin: 0 0 16px;
+  color: #667085;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.bcl-popup-status-ok {
+  color: #087f5b;
+}
+
+.bcl-popup-status-error {
+  color: #b42318;
+}
+
+#bcl-key-form {
+  display: grid;
+  gap: 8px;
+}
+
+label {
+  color: #344054;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 38px;
+  border: 1px solid #cfd8e3;
+  border-radius: 6px;
+  padding: 8px 10px;
+  background: #ffffff;
+  color: #1f2933;
+  font: inherit;
+}
+
+input:focus {
+  outline: 2px solid #7fc7e8;
+  outline-offset: 1px;
+  border-color: #168aad;
+}
+
+button {
+  min-height: 38px;
+  border: 1px solid #168aad;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background: #168aad;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #0e7490;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.bcl-popup-secondary {
+  width: 100%;
+  margin-top: 10px;
+  border-color: #cfd8e3;
+  background: #ffffff;
+  color: #344054;
+}
+
+.bcl-popup-secondary:hover:not(:disabled) {
+  background: #eef4f7;
+}

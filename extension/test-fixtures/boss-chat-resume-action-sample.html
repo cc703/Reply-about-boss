@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOSS Chat Listener Resume Action Fixture</title>
+    <link rel="stylesheet" href="../styles/panel.css">
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #eaf7f8;
+        color: #1f2d3a;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      }
+
+      .fixture-shell {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 28px 24px;
+      }
+
+      .boss-chat-page {
+        min-height: 640px;
+        background: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .chat-header {
+        padding: 18px 20px;
+        background: #f4fbfe;
+        border-bottom: 1px solid #e0edf2;
+      }
+
+      .job-bar {
+        padding: 14px 20px;
+        border-bottom: 1px solid #eef3f6;
+        font-size: 18px;
+      }
+
+      .chat-scroll {
+        padding: 28px 20px 96px;
+      }
+
+      .time-line {
+        margin: 12px 0 28px;
+        color: #a0a9b3;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .message-row {
+        display: flex;
+        margin: 18px 0;
+      }
+
+      .message-row.item-friend {
+        justify-content: flex-start;
+      }
+
+      .message-row.item-myself {
+        justify-content: flex-end;
+      }
+
+      .bubble {
+        max-width: 620px;
+        padding: 13px 16px;
+        border-radius: 8px;
+        line-height: 1.65;
+        font-size: 16px;
+      }
+
+      .item-friend .bubble {
+        background: #f4f6f8;
+      }
+
+      .item-myself .bubble {
+        background: #c9f3f3;
+      }
+
+      .analysis-card {
+        width: 420px;
+        margin: 28px auto;
+        padding: 18px;
+        border: 1px solid #b9d1ff;
+        border-radius: 8px;
+        background: #f5f8ff;
+        text-align: center;
+      }
+
+      .dialog-action {
+        width: 120px;
+        margin: 24px auto 0;
+        padding: 10px 14px;
+        border-radius: 6px;
+        background: #e9f3f5;
+        color: #0c9aa6;
+        text-align: center;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="fixture-shell">
+      <section class="boss-chat-page">
+        <header class="chat-header">
+          <strong>招聘方 · 招聘HR</strong>
+        </header>
+        <div class="job-bar">匿名岗位 · 研发工程师</div>
+        <div class="chat-scroll" id="chat-stream">
+          <div class="time-line">07-20 11:34</div>
+          <div class="message-row item-friend">
+            <div class="bubble chat-message text">终于等到优秀的你了！这是校招内推信息，期待你的加入。</div>
+          </div>
+          <div class="analysis-card job-card">
+            <div>你与该职位竞争者PK情况</div>
+            <button>查看详细分析</button>
+          </div>
+          <div class="dialog-action content">发简历</div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../src/messageExtractor.js"></script>
+    <script src="../src/panel.js"></script>
+    <script src="../src/content.js"></script>
+  </body>
+</html>

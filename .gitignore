@@ -1,0 +1,50 @@
+# Local secrets and environment
+.env
+.env.*
+!.env.example
+.venv/
+*.key
+*.pem
+*.pfx
+*.p12
+
+# Private resume and document files
+*.docx
+*.pdf
+*.doc
+
+# Screenshots and chat captures
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Local assistant/tooling data
+.claude/
+CLAUDE.md
+.omx/
+
+# Browser/runtime output
+profile/
+chrome-profile/
+edge-profile/
+dist/
+build/
+coverage/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# Node/Python dependencies and caches
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

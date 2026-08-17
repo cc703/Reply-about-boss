@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOSS Chat Listener Fixture</title>
+    <link rel="stylesheet" href="../styles/panel.css">
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #eef3f7;
+        color: #1f2d3a;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      }
+
+      .fixture-shell {
+        max-width: 980px;
+        margin: 32px auto;
+        padding: 0 24px;
+      }
+
+      .boss-chat-page {
+        min-height: 620px;
+        background: #ffffff;
+        border: 1px solid #d9e1e8;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .chat-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 20px;
+        background: #f8fbfd;
+        border-bottom: 1px solid #e4ebf1;
+      }
+
+      .chat-scroll {
+        padding: 28px 20px 96px;
+      }
+
+      .time-line {
+        margin: 16px 0;
+        color: #a0a9b3;
+        text-align: center;
+        font-size: 13px;
+      }
+
+      .message-row {
+        display: flex;
+        margin: 18px 0;
+      }
+
+      .message-row.item-friend {
+        justify-content: flex-start;
+      }
+
+      .message-row.item-myself {
+        justify-content: flex-end;
+      }
+
+      .bubble {
+        max-width: 520px;
+        padding: 11px 14px;
+        border-radius: 8px;
+        line-height: 1.6;
+        font-size: 16px;
+      }
+
+      .item-friend .bubble {
+        background: #f4f6f8;
+      }
+
+      .item-myself .bubble {
+        background: #c9f3f3;
+      }
+
+      .job-card {
+        width: 360px;
+        margin: 20px auto;
+        padding: 14px;
+        border: 1px solid #b9d1ff;
+        border-radius: 8px;
+        background: #f5f8ff;
+        text-align: center;
+      }
+
+      .job-card button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 8px;
+        border: 0;
+        border-radius: 6px;
+        background: #dfe8fb;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="fixture-shell">
+      <section class="boss-chat-page">
+        <header class="chat-header">
+          <strong>胡女士 · 招聘HR</strong>
+          <span>python实习生（偏后端）</span>
+        </header>
+        <div class="chat-scroll" id="chat-stream">
+          <div class="time-line">10:08</div>
+          <div class="message-row item-friend">
+            <div class="bubble chat-message text">你好，看了你的简历，方便聊聊吗</div>
+          </div>
+          <div class="job-card analysis-card">
+            <div>你与该职位竞争者PK情况</div>
+            <button>查看详细分析</button>
+          </div>
+          <div class="message-row item-myself">
+            <div class="bubble chat-message text">可以的，想了解一下岗位要求</div>
+          </div>
+          <div class="time-line">15:06</div>
+          <div class="message-row item-friend">
+            <div class="bubble chat-message text">你对 Python 的原理，或者相关技术栈，比如 FastAPI / Flask 框架等掌握程度咋样呢</div>
+          </div>
+          <div class="message-row item-myself">
+            <div class="bubble chat-message text">我 Python 基础和 FastAPI 有一些项目经验</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../src/messageExtractor.js"></script>
+    <script src="../src/panel.js"></script>
+    <script src="../src/content.js"></script>
+  </body>
+</html>

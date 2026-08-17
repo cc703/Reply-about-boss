@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOSS Chat Listener 设置</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="bcl-popup" aria-labelledby="bcl-popup-title">
+      <h1 id="bcl-popup-title">DeepSeek 设置</h1>
+      <p class="bcl-popup-status" id="bcl-key-status" aria-live="polite">正在检查本地服务...</p>
+      <form id="bcl-key-form">
+        <label for="bcl-key-input">API Key</label>
+        <input
+          id="bcl-key-input"
+          type="password"
+          autocomplete="new-password"
+          spellcheck="false"
+          inputmode="text"
+          maxlength="256"
+          required
+        >
+        <button id="bcl-key-save" type="submit">保存</button>
+      </form>
+      <button id="bcl-key-clear" class="bcl-popup-secondary" type="button">清除已保存的 Key</button>
+    </main>
+    <script src="src/settingsClient.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
